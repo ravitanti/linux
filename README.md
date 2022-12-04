@@ -31,10 +31,14 @@ I worked with Saurabh for this assignment. On my machine, I began setting up the
 
 <li>Screenshot that shows nested VM creatdd on KVM host.<br>
       <img src="https://user-images.githubusercontent.com/97319236/205519676-e476e30e-c2c5-49f3-972b-52777530344c.png"><br>
+      
+      
 
 <li>Screenshot that shows nested VM is running.<br>
       <img src="https://user-images.githubusercontent.com/97319236/205521209-ab6ba822-f70d-4d33-b570-1d11cac51785.png"><br>
 <br>
+      
+      
 
 <h3>Total Number of exits and total time in vmm</h3>
 <li>Screenshot that shows nested VM creatdd on KVM host.<br>
