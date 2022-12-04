@@ -24,7 +24,14 @@ I worked with Saurabh for this assignment. On my machine, I began setting up the
 11. Install CPUID using ```sudo apt install cpuid``` if it is an Ubuntu VM. <br>
 12. Install gcc in the nested VM.  <br>
 12. Ran the test file form the nested VM to print the output.  <br>
-13. 
-Output Screenshot</h2>
-![image](https://user-images.githubusercontent.com/97319236/205518979-aa606478-2478-4213-be1f-24c54f7b146c.png)
-![image](https://user-images.githubusercontent.com/97319236/205519003-9968b6e8-862d-473f-8ce5-4308b019b60b.png)
+
+
+
+<h2>Output Screenshot</h2>
+<ul>
+
+
+![1](https://user-images.githubusercontent.com/97319236/205519336-72b78f33-9b1d-4087-9764-3cf0dafdcaf0.png) <br>
+![2](https://user-images.githubusercontent.com/97319236/205519344-7944e373-b447-4bc1-a8bf-896691c15814.png) <br>
+
+
