@@ -10,17 +10,21 @@ I worked with Saurabh for this assignment. On my machine, I began setting up the
 
 <h3>Steps followed:</h3>
 1. Made Clone of linux source code and cloned it on local system. <br>
-2. Update the files arch/x86/kvm/vmx/vmx.c and arch/x86/kvm/cpuid.c <br>
+2. Update the files ```arch/x86/kvm/vmx/vmx.c``` and ```arch/x86/kvm/cpuid.c``` <br>
 3. Install all the dependencies required for build. <br>
-4. Rebuild the kernel using make modules command and make INSTALL_MOD_STRIP=1 modules_install && make install. <br>
-5. Run lsmod | grep kvm to check if the kvm modules are preloaded. <br>
-6. If they are already present remove them using rmmod kvm and rmmod kvm_intel commands. <br>
-7. Run modprobe kvm and modprobe kvm_intel commands to reload edited kvm modules. <br>
+4. Rebuild the kernel using ```make modules``` command and ```make INSTALL_MOD_STRIP=1 modules_install && make install```. <br>
+5. Run ```lsmod | grep kvm``` to check if the kvm modules are preloaded. <br>
+6. If they are already present remove them using ```rmmod kvm``` and ```rmmod kvm_intel``` commands. <br>
+7. Run ```modprobe kvm``` and ```modprobe kvm_intel``` commands to reload edited kvm modules. <br>
 8. Run the commands listed below from the host terminal in order to enable the kvm module in the host and install the required packages. <br>
-      sudo apt install qemu qemu-kvm qemu-system qemu-utils <br>
-      sudo apt install libvirt-clients libvirt-daemon-system virtinst <br>
-9. Launch Virtual Machine Manager using virt-manager command, and inside the host, create a new VM. (as a prerequisite, download the iso file or guest VM). <br>
+      ```sudo apt install qemu qemu-kvm qemu-system qemu-utils``` <br>
+      ```sudo apt install libvirt-clients libvirt-daemon-system virtinst``` <br>
+9. Launch Virtual Machine Manager using ```virt-manager``` command, and inside the host, create a new VM. (as a prerequisite, download the iso file or guest VM). <br>
 10. Install Guest(debian 11) OS once the VM is created and login to the nested VM. <br>
-11. Install CPUID using sudo apt install cpuid if it is an Ubuntu VM. <br>
+11. Install CPUID using ```sudo apt install cpuid``` if it is an Ubuntu VM. <br>
 12. Install gcc in the nested VM.  <br>
 12. Ran the test file form the nested VM to print the output.  <br>
+13. 
+Output Screenshot</h2>
+![image](https://user-images.githubusercontent.com/97319236/205518979-aa606478-2478-4213-be1f-24c54f7b146c.png)
+![image](https://user-images.githubusercontent.com/97319236/205519003-9968b6e8-862d-473f-8ce5-4308b019b60b.png)
