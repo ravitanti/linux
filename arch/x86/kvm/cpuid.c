@@ -1493,6 +1493,11 @@ bool kvm_cpuid(struct kvm_vcpu *vcpu, u32 *eax, u32 *ebx,
 }
 EXPORT_SYMBOL_GPL(kvm_cpuid);
 
+atomic_t total_exits = ATOMIC_INIT(0);
+atomic64_t time_taken = ATOMIC_INIT(0);
+EXPORT_SYMBOL(total_exits);
+EXPORT_SYMBOL(time_taken);
+
 int kvm_emulate_cpuid(struct kvm_vcpu *vcpu)
 {
 	u32 eax, ebx, ecx, edx;
@@ -1502,7 +1507,25 @@ int kvm_emulate_cpuid(struct kvm_vcpu *vcpu)
 
 	eax = kvm_rax_read(vcpu);
 	ecx = kvm_rcx_read(vcpu);
-	kvm_cpuid(vcpu, &eax, &ebx, &ecx, &edx, false);
+	if(eax == 0x4FFFFFFC){
+	
+		eax = arch_atomic_read(&total_exits);
+		printk(KERN_INFO "Total number of exits in eax=%u", eax);
+	}
+	else if(eax == 0x4FFFFFFD){
+		// High 32 bits of the total time spent in %ebx
+		printk(KERN_INFO "Exit duration=%llu", atomic64_read(&time_taken));
+		ebx = (atomic64_read(&time_taken) >> 32);
+		printk(KERN_INFO "Updated ebx exit duration=%u", ebx);
+		// Low 32 bits of the total time spent in %ecx
+		ecx = (atomic64_read(&time_taken) & 0xFFFFFFFD);
+		printk(KERN_INFO "updated low 32 bits in ecx=%u", ecx);
+	}
+	else {
+	        kvm_cpuid(vcpu, &eax, &ebx, &ecx, &edx, false);
+    	}
+	
+	//kvm_cpuid(vcpu, &eax, &ebx, &ecx, &edx, false);
 	kvm_rax_write(vcpu, eax);
 	kvm_rbx_write(vcpu, ebx);
 	kvm_rcx_write(vcpu, ecx);
