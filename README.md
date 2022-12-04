@@ -1,7 +1,6 @@
 <h1>CMPE 283 Assignments - 02</h1>
 <h3>By Ravi Kumar Tanti and Saurabh Ramesh Warathe</h3>
 
-<h2>Assignment-01</h2>
 
 <h3>Work done by Ravi (015267200):</h3>
 I worked with Saurabh for this assignment. On my machine, I began setting up the environment for assignment 02. I started building the kernel and encountered which i solved by installing all the dependencies. Then I edited the cpuid.c and added if..else condition in the kvm_emulate_cpuid block code. I encountered the error of undefined variable when I use U32 therefore I reinitialized it by using atomic variables After Saurabh committed the changes he made to vmx.c, I rebuilt the kernel and committed it to the GitHub repo inside /arch/x86/kvm after a successful built. I also installed KVM on the hypervisor so that a guest VM can be created and test script can be executed on that.
@@ -34,9 +33,9 @@ I worked with Saurabh for this assignment. On my machine, I began setting up the
       <img src="https://user-images.githubusercontent.com/97319236/205519676-e476e30e-c2c5-49f3-972b-52777530344c.png"><br>
 
 <li>Screenshot that shows nested VM is running.<br>
-      <img src="https://user-images.githubusercontent.com/97319236/205519676-e476e30e-c2c5-49f3-972b-52777530344c.png"><br>
+      <img src="https://user-images.githubusercontent.com/97319236/205521209-ab6ba822-f70d-4d33-b570-1d11cac51785.png"><br>
 <br>
-      
+
 <h3>Total Number of exits and total time in vmm</h3>
 <li>Screenshot that shows nested VM creatdd on KVM host.<br>
       <img src="https://user-images.githubusercontent.com/97319236/205520741-59045a80-4a50-4848-b092-83dd618c84e9.png"><br>
