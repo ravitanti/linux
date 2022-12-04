@@ -31,7 +31,7 @@ I worked with Saurabh for this assignment. On my machine, I began setting up the
 <ul>
 
 <li>Screenshot that shows nested VM creatdd on KVM host.<br>
-![kvm ok](https://user-images.githubusercontent.com/97319236/205519676-e476e30e-c2c5-49f3-972b-52777530344c.png)
+![kvm ok](https://user-images.githubusercontent.com/97319236/205519676-e476e30e-c2c5-49f3-972b-52777530344c.png) <br>
 
 
 <li>Screenshot that shows nested VM is running.<br>
@@ -39,7 +39,7 @@ I worked with Saurabh for this assignment. On my machine, I began setting up the
 
 <h3>Total Number of exits</h3>
 <li>Screenshot that shows nested VM creatdd on KVM host.<br>
-![output](https://user-images.githubusercontent.com/97319236/205520203-6c9e1e08-0c0e-4e35-9014-4d9b42767857.png)
+![output](https://user-images.githubusercontent.com/97319236/205520203-6c9e1e08-0c0e-4e35-9014-4d9b42767857.png) <br>
 
 
 
