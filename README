@@ -1,12 +1,18 @@
-<h1>CMPE 283 Assignments</h1>
-<h3>By Ravi Kumar Tanti and Saurabh Ramesh Warathe</h3>
+Linux kernel
+============
 
-<h2>Assignment-01</h2>
+There are several guides for kernel developers and users. These guides can
+be rendered in a number of formats, like HTML and PDF. Please read
+Documentation/admin-guide/README.rst first.
 
-<h3>Work done by Ravi (015267200):</h3>
-I worked with Saurabh for this assignment. On my machine, I began setting up the environment for assignment 02. I started building the kernel and encountered which i solved by installing all the dependencies. Then I edited the cpuid.c and added if..else condition in the kvm_emulate_cpuid block code. I encountered the error of undefined variable when I use U32 therefore I reinitialized it by using atomic variables After Saurabh committed the changes he made to vmx.c, I rebuilt the kernel and committed it to the GitHub repo inside /arch/x86/kvm after a successful built. I also installed KVM on the hypervisor so that a guest VM can be created and test script can be executed on that.
+In order to build the documentation, use ``make htmldocs`` or
+``make pdfdocs``.  The formatted documentation can also be read online at:
 
+    https://www.kernel.org/doc/html/latest/
 
+There are various text files in the Documentation/ subdirectory,
+several of them using the Restructured Text markup notation.
 
-<h3>Steps followed:</h3>
-1. 
+Please read the Documentation/process/changes.rst file, as it contains the
+requirements for building and running the kernel, and information about
+the problems which may result by upgrading your kernel.
