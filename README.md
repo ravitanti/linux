@@ -31,17 +31,15 @@ I worked with Saurabh for this assignment. On my machine, I began setting up the
 <ul>
 
 <li>Screenshot that shows nested VM creatdd on KVM host.<br>
-      <img src="https://user-images.githubusercontent.com/97319236/205519676-e476e30e-c2c5-49f3-972b-52777530344c.png" width="350" title="hover text">
-![nested On](https://user-images.githubusercontent.com/97319236/205520693-9e2b0bdf-125f-4a42-ac1d-ecf3528766a7.png)
-<br>
+      <img src="https://user-images.githubusercontent.com/97319236/205519676-e476e30e-c2c5-49f3-972b-52777530344c.png"><br>
 
 <li>Screenshot that shows nested VM is running.<br>
-![1](https://user-images.githubusercontent.com/97319236/205520717-03ecab40-f719-418d-98e2-088d4451ffc1.png)
+      <img src="https://user-images.githubusercontent.com/97319236/205519676-e476e30e-c2c5-49f3-972b-52777530344c.png"><br>
 <br>
       
-<h3>Total Number of exits</h3>
+<h3>Total Number of exits and total time in vmm</h3>
 <li>Screenshot that shows nested VM creatdd on KVM host.<br>
-![knm ok](https://user-images.githubusercontent.com/97319236/205520741-59045a80-4a50-4848-b092-83dd618c84e9.png)
+      <img src="https://user-images.githubusercontent.com/97319236/205520741-59045a80-4a50-4848-b092-83dd618c84e9.png"><br>
 <br>
 
 
