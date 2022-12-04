@@ -6362,6 +6362,9 @@ static int __vmx_handle_exit(struct kvm_vcpu *vcpu, fastpath_t exit_fastpath)
 			atomic64_fetch_add(end_time - start_time, &time_taken);
 			return 1;
 		}
+		
+		
+		   
 	}
 
 	/* If guest state is invalid, start emulating.  L2 is handled above. */
