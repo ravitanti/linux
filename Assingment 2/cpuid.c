@@ -1514,9 +1514,12 @@ int kvm_emulate_cpuid(struct kvm_vcpu *vcpu)
 	}
 	else if(eax == 0x4FFFFFFD){
 		// High 32 bits of the total time spent in %ebx
+		printk(KERN_INFO "Exit duration=%llu", atomic64_read(&time_taken));
 		ebx = (atomic64_read(&time_taken) >> 32);
+		printk(KERN_INFO "Updated ebx exit duration=%u", ebx);
 		// Low 32 bits of the total time spent in %ecx
 		ecx = (atomic64_read(&time_taken) & 0xFFFFFFFD);
+		printk(KERN_INFO "updated low 32 bits in ecx=%u", ecx);
 	}
 	else {
 	        kvm_cpuid(vcpu, &eax, &ebx, &ecx, &edx, false);
