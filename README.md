@@ -31,7 +31,7 @@ I worked with Ravi for this assignment. On my machine, I edited the vmx.c file a
 <h2>Output Screenshot</h2>
 <ul>
 
-<li>Screenshot that shows nested VM creatdd on KVM host.<br>
+<li>Screenshot that shows nested VM created on KVM host.<br>
       <br>
       <img src="https://user-images.githubusercontent.com/97319236/205519676-e476e30e-c2c5-49f3-972b-52777530344c.png"><br>
   <br>    
