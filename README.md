@@ -5,6 +5,8 @@
 <h3>Work done by Ravi (015267200):</h3>
 I worked with Saurabh for this assignment. On my machine, I began setting up the environment for assignment 02. I started building the kernel and encountered which i solved by installing all the dependencies. Then I edited the cpuid.c and added if..else condition in the kvm_emulate_cpuid block code. I encountered the error of undefined variable when I use U32 therefore I reinitialized it by using atomic variables After Saurabh committed the changes he made to vmx.c, I rebuilt the kernel and committed it to the GitHub repo inside /arch/x86/kvm after a successful built. I also installed KVM on the hypervisor so that a guest VM can be created and test script can be executed on that.
 
+<h3>Work done by Saurabh (015267226):</h3>
+I worked with Ravi for this assignment. On my machine, I edited the vmx.c file according to the edits made in cpuid.c by Ravi. I pushed the changes to GitHub. I then tried to rebuild the kernel. There were some errors encountered while rebuilding the kernel so we decided to start from scratch for assignment 02 and noted all the configuration changes and libraries that are required to be installed to run a successful make. After rebuilding the kernel and successful make command, I also installed nested os on ubuntu host whcih was debian11 and created the test script to generate and print the sample output.  
 
 
 <h3>Steps followed:</h3>
