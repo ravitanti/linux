@@ -17,7 +17,7 @@ I worked with Ravi for this assignment. On my machine, I edited the vmx.c file a
 5. Run ```lsmod | grep kvm``` to check if the kvm modules are preloaded. <br>
 6. If they are already present remove them using ```rmmod kvm``` and ```rmmod kvm_intel``` commands. <br>
 7. Run ```modprobe kvm``` and ```modprobe kvm_intel``` commands to reload edited kvm modules. <br>
-8. Run the commands listed below from the host terminal in order to enable the kvm module in the host and install the required packages. <br>
+8. Run the commands listed below from the host terminal in order to enable the kvm module in the host and install the required packages. (<a href="https://www.tecmint.com/install-kvm-on-ubuntu/">ref</a>) <br>
       ```sudo apt install qemu qemu-kvm qemu-system qemu-utils``` <br>
       ```sudo apt install libvirt-clients libvirt-daemon-system virtinst``` <br>
 9. Launch Virtual Machine Manager using ```virt-manager``` command, and inside the host, create a new VM. (as a prerequisite, download the iso file or guest VM). <br>
