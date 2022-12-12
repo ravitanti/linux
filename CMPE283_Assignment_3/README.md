@@ -102,36 +102,10 @@ There were many exit reasons with 0 exits (least frequent). The full dmesg outpu
 
 <h4>Other Output Screenshots </h4>
 
-<li> Output of cpuid command for ebx(high 32-bit) and ecx(low 32-bit) values when eax=0x4ffffffc. <br>
+<li> Output of cpuid command for ebx(high 32-bit) and ecx(low 32-bit) values when eax=0x4FFFFFFF. <br>
   
 
 
 <li> dmesg output of test4 script for ebx(high 32-bit) and ecx(low 32-bit) values when eax=0x4FFFFFFF. Full dmesg logs is in the test4.txt file in CMPE-283-Assignment-3 folder.<br>
   
 
-
-<h1>Assignment-04</h1>
-
-<h3>Work done by Kajal (015210884):</h3>
-We started working on GCP instance on which Assignment 3 was finished. I worked on performance when using shadow paging to illustrate the different exit frequencies and types. I removed the kvm-intel module and reloaded with parameter ept=0 and recorded the total exit count information in shadow.txt file.(https://github.com/kajaldhanotia/linux/blob/master/CMPE-283-Assignment-4/shadow.txt)
-    
-<h3>Work done by Sumeet (015252003):</h3>
-We started working on GCP instance on which Assignment 3 was finished. I worked on performance when using nested paging to illustrate the different exit frequencies and types. I recorded the total exit count information in nested.txt file.(https://github.com/kajaldhanotia/linux/blob/master/CMPE-283-Assignment-4/nested.txt)
-	
-<h3>Question 2: Include a sample of your print of exit count output from dmesg from “with ept” and “without ept”.</h3>
-
-<h4> Output when EPT=0 (Shadow Paging)</h4>
-
-
-	
-See full output here: 
-	
-<h4> Output when EPT = non zero (Nested Paging)</h4>
-	
-
-
-
-See full output here: 
-
-  
-  
