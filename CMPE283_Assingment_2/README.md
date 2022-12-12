@@ -44,7 +44,7 @@ I worked with Ravi for this assignment. On my machine, I edited the vmx.c file a
 
 <h3>Total Number of exits and total time in vmm</h3>
       <br>
-      <img src="https://user-images.githubusercontent.com/97319236/205520741-59045a80-4a50-4848-b092-83dd618c84e9.png"><br>
+      <img src="https://user-images.githubusercontent.com/97319236/206979465-3e3b5ce0-bcb4-42a8-acca-81e86c96b694.png"><br>
 <br>
 
 
