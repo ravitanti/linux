@@ -1,51 +1,35 @@
-<h1>CMPE 283 Assignments - 02</h1>
+<h1>CMPE 283 Virtulization</h1>
 <h3>By Ravi Kumar Tanti and Saurabh Ramesh Warathe</h3>
 
-
-<h3>Work done by Ravi (015267200):</h3>
-I worked with Saurabh for this assignment. On my machine, I began setting up the environment for assignment 02. I started building the kernel and encountered which i solved by installing all the dependencies. Then I edited the cpuid.c and added if..else condition in the kvm_emulate_cpuid block code. I encountered the error of undefined variable when I use U32 therefore I reinitialized it by using atomic variables After Saurabh committed the changes he made to vmx.c, I rebuilt the kernel and committed it to the GitHub repo inside /arch/x86/kvm after a successful built. I also installed KVM on the hypervisor so that a guest VM can be created and test script can be executed on that.
-
-<h3>Work done by Saurabh (015267226):</h3>
-I worked with Ravi for this assignment. On my machine, I edited the vmx.c file according to the edits made in cpuid.c by Ravi. I pushed the changes to GitHub. I then tried to rebuild the kernel. There were some errors encountered while rebuilding the kernel so we decided to start from scratch for assignment 02 and noted all the configuration changes and libraries that are required to be installed to run a successful make. After rebuilding the kernel and successful make command, I also installed nested os on ubuntu host whcih was debian11 and created the test script to generate and print the sample output.  
-
-
 <h3>Steps followed:</h3>
-1. Made Clone of linux source code and cloned it on local system. <br>
-2. Update the files ```arch/x86/kvm/vmx/vmx.c``` and ```arch/x86/kvm/cpuid.c``` <br>
-3. Install all the dependencies required for build. <br>
-4. Rebuild the kernel using ```make modules``` command and ```make INSTALL_MOD_STRIP=1 modules_install && make install```. <br>
-5. Run ```lsmod | grep kvm``` to check if the kvm modules are preloaded. <br>
-6. If they are already present remove them using ```rmmod kvm``` and ```rmmod kvm_intel``` commands. <br>
-7. Run ```modprobe kvm``` and ```modprobe kvm_intel``` commands to reload edited kvm modules. <br>
-8. Run the commands listed below from the host terminal in order to enable the kvm module in the host and install the required packages. (<a href="https://www.tecmint.com/install-kvm-on-ubuntu/">ref</a>) <br>
+1. Installed VMware Workstation 15.<br>
+2. Installed Linux Ububtu 22.04.1 with nested capabilities and given RAM of 8GB, disk space of 120GB and 8 Cores of processor.<br>
+3. Verified if nested virtulisation is installed properly by checking sys/module/intel_/nested.<br>
+4. Retrieve the starter .c file and Mekefile from canvas.<br>
+5. Add the remaining code sections to the file.(struct, definitions and vm features)<br>
+6. Installed GCC.<br>
+7. Add capabilities structs based on info from SDM and make calls to rdmsr and report_capibility in the .c file.<br>
+8. In the directory of the .c file and make file call 'sudo make'<br>
+9. Call 'sudo ismode ./cmpe283-1.ko'.<br>
+10. Call sudo dmesg to see capabilities.<br>
+11. Made Clone of linux source code and cloned it on local system. <br>
+12. Update the files ```arch/x86/kvm/vmx/vmx.c``` and ```arch/x86/kvm/cpuid.c``` <br>
+13. Install all the dependencies required for build. <br>
+14. Rebuild the kernel using ```make modules``` command and ```make INSTALL_MOD_STRIP=1 modules_install && make install```. <br>
+15. Run ```lsmod | grep kvm``` to check if the kvm modules are preloaded. <br>
+16. If they are already present remove them using ```rmmod kvm``` and ```rmmod kvm_intel``` commands. <br>
+17. Run ```modprobe kvm``` and ```modprobe kvm_intel``` commands to reload edited kvm modules. <br>
+18. Run the commands listed below from the host terminal in order to enable the kvm module in the host and install the required packages. (<a href="https://www.tecmint.com/install-kvm-on-ubuntu/">ref</a>) <br>
       ```sudo apt install qemu qemu-kvm qemu-system qemu-utils``` <br>
       ```sudo apt install libvirt-clients libvirt-daemon-system virtinst``` <br>
-9. Launch Virtual Machine Manager using ```virt-manager``` command, and inside the host, create a new VM. (as a prerequisite, download the iso file or guest VM). <br>
-10. Install Guest(debian 11) OS once the VM is created and login to the nested VM. <br>
-11. Install CPUID using ```sudo apt install cpuid``` if it is an Ubuntu VM. <br>
-12. Install gcc in the nested VM.  <br>
-12. Ran the test file form the nested VM to print the output.  <br>
+19. Launch Virtual Machine Manager using ```virt-manager``` command, and inside the host, create a new VM. (as a prerequisite, download the iso file or guest VM). <br>
+20. Install Guest(debian 11) OS once the VM is created and login to the nested VM. <br>
+21. Install CPUID using ```sudo apt install cpuid``` if it is an Ubuntu VM. <br>
+22. Install gcc in the nested VM.  <br>
+32. Ran the test file form the nested VM to print the output.  <br>
 
-
-
-<h2>Output Screenshot</h2>
-<ul>
-
-<li>Screenshot that shows nested VM created on KVM host.<br>
-      <br>
-      <img src="https://user-images.githubusercontent.com/97319236/205519676-e476e30e-c2c5-49f3-972b-52777530344c.png"><br>
-  <br>    
-      
-
-<li>Screenshot that shows nested VM is running.<br>
-      <br>
-      <img src="https://user-images.githubusercontent.com/97319236/205521209-ab6ba822-f70d-4d33-b570-1d11cac51785.png"><br>
-<br>
-
-<h3>Total Number of exits and total time in vmm</h3>
-      <br>
-      <img src="https://user-images.githubusercontent.com/97319236/205520741-59045a80-4a50-4848-b092-83dd618c84e9.png"><br>
-<br>
-
+<h3>Assingment 01</h3> <a href="https://github.com/ravitanti/linux/tree/master/CMPE283_Assingment_1">ref</a> <br>
+<h3>Assingment 02</h3> <a href="https://github.com/ravitanti/linux/tree/master/CMPE283_Assingment_2">ref</a> <br>
+<h3>Assingment 03</h3> <a href="dem">ref</a> <br>
 
 
