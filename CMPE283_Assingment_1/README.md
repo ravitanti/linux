@@ -20,3 +20,18 @@ Along with Ravi I started by downloading the Makefile and the .c file on the VM,
 8. In the directory of the .c file and make file call 'sudo make'<br>
 9. Call 'sudo ismode ./cmpe283-1.ko'. <br>
 10. Call sudo dmesg to see capabilities. <br>
+
+
+<li>Screenshot of Output.<br>
+      <br>
+      <img src="![1](https://user-images.githubusercontent.com/97319236/206943246-acc66283-9c6a-4511-bea4-9f4994448579.png)"><br>
+
+      <img src="![2](https://user-images.githubusercontent.com/97319236/206943304-2f2340ce-fa8a-4c6a-8e08-d2843f095951.png)"><br>
+
+      <img src="![3](https://user-images.githubusercontent.com/97319236/206943325-6400ff79-052f-44ea-9b60-fc733c24a4e8.png)"><br>
+
+      <img src="![4](https://user-images.githubusercontent.com/97319236/206943351-70cfe269-8dd5-4729-b10d-0cb68f3390ca.png)"><br>
+
+      <img src="![5](https://user-images.githubusercontent.com/97319236/206943388-b0e3e074-4be7-4ec1-be25-85232463c9f5.png)"><br>
+   
+  
