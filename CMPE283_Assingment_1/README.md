@@ -23,10 +23,10 @@ Along with Ravi I started by downloading the Makefile and the .c file on the VM,
 
 
 <h4>Screenshot of Output-</h4><br>
-      <img src="https://user-images.githubusercontent.com/97319236/206943246-acc66283-9c6a-4511-bea4-9f4994448579.png"><br>
-      <img src="https://user-images.githubusercontent.com/97319236/206943304-2f2340ce-fa8a-4c6a-8e08-d2843f095951.png"><br>
-      <img src="https://user-images.githubusercontent.com/97319236/206943325-6400ff79-052f-44ea-9b60-fc733c24a4e8.png"><br>
-      <img src="https://user-images.githubusercontent.com/97319236/206943351-70cfe269-8dd5-4729-b10d-0cb68f3390ca.png"><br>
+      <img src="https://user-images.githubusercontent.com/97319236/206943246-acc66283-9c6a-4511-bea4-9f4994448579.png">
+      <img src="https://user-images.githubusercontent.com/97319236/206943304-2f2340ce-fa8a-4c6a-8e08-d2843f095951.png">
+      <img src="https://user-images.githubusercontent.com/97319236/206943325-6400ff79-052f-44ea-9b60-fc733c24a4e8.png">
+      <img src="https://user-images.githubusercontent.com/97319236/206943351-70cfe269-8dd5-4729-b10d-0cb68f3390ca.png">
       <img src="https://user-images.githubusercontent.com/97319236/206943388-b0e3e074-4be7-4ec1-be25-85232463c9f5.png"><br>
    
   
