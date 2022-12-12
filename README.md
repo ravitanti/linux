@@ -30,8 +30,8 @@
 
 <h3>Links To all Assingment: </h3>
 
-<a href="https://github.com/ravitanti/linux/tree/master/CMPE283_Assingment_1">Assingment 01</a>
-<a href="https://github.com/ravitanti/linux/tree/master/CMPE283_Assingment_2">Assingment 02</a>
-<a href="dem">Assingment 03</a>
+<a href="https://github.com/ravitanti/linux/tree/master/CMPE283_Assingment_1">Assingment 01</a><br>
+<a href="https://github.com/ravitanti/linux/tree/master/CMPE283_Assingment_2">Assingment 02</a><br>
+<a href="dem">Assingment 03</a><br>
 
 
