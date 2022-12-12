@@ -26,10 +26,12 @@
 20. Install Guest(debian 11) OS once the VM is created and login to the nested VM. <br>
 21. Install CPUID using ```sudo apt install cpuid``` if it is an Ubuntu VM. <br>
 22. Install gcc in the nested VM.  <br>
-32. Ran the test file form the nested VM to print the output.  <br>
+23. Ran the test file form the nested VM to print the output.  <br>
 
-<a href="https://github.com/ravitanti/linux/tree/master/CMPE283_Assingment_1"><h3>Assingment 01</h3></a> <br>
-<a href="https://github.com/ravitanti/linux/tree/master/CMPE283_Assingment_2"><h3>Assingment 02</h3> </a> <br>
-<a href="dem"><h3>Assingment 03</h3> </a>
+<h3>Links To all Assingment: </h3>
+
+<a href="https://github.com/ravitanti/linux/tree/master/CMPE283_Assingment_1">Assingment 01</a>
+<a href="https://github.com/ravitanti/linux/tree/master/CMPE283_Assingment_2">Assingment 02</a>
+<a href="dem">Assingment 03</a>
 
 
