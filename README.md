@@ -28,8 +28,8 @@
 22. Install gcc in the nested VM.  <br>
 32. Ran the test file form the nested VM to print the output.  <br>
 
-<h3>Assingment 01</h3> <a href="https://github.com/ravitanti/linux/tree/master/CMPE283_Assingment_1">ref</a> <br>
-<h3>Assingment 02</h3> <a href="https://github.com/ravitanti/linux/tree/master/CMPE283_Assingment_2">ref</a> <br>
-<h3>Assingment 03</h3> <a href="dem">ref</a> <br>
+<a href="https://github.com/ravitanti/linux/tree/master/CMPE283_Assingment_1"><h3>Assingment 01</h3></a> <br>
+<a href="https://github.com/ravitanti/linux/tree/master/CMPE283_Assingment_2"><h3>Assingment 02</h3> </a> <br>
+<a href="dem"><h3>Assingment 03</h3> </a>
 
 
