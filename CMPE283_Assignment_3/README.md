@@ -16,53 +16,53 @@ I edited the cpuid.c code block for eax=0x4FFFFFFF to return the time spent proc
 2. Navigate to ~/linux/arch/x86/kvm/cpuid.c and edit the code block. Put another if..else condition for when eax = 0x4FFFFFFE. <br>
 	  
 	
-
-	else if(eax == 0x4FFFFFFE)
+		else if(eax == 0x4FFFFFFE)
         	{
-		//reasons not in SDM
-		if(ecx==35 || ecx==38 || ecx==42 || ecx==65 || ecx>68 || ecx<0){
-			printk(KERN_INFO "exit reason number = %u not defined by SDM",ecx);
-			eax=0;
-			ebx=0;
-			ecx=0;
-			edx=0xFFFFFFFF;
-		}
-		else if( ecx==5 || ecx==6 || ecx==11 || ecx==17 ||  ecx==35 || ecx==38 || ecx==42 || ecx==66){
-				printk(KERN_INFO"exit reason number =%u not enabled in KVM",ecx);
-				eax=ebx=ecx=edx=0x00000000;
+		
+			//reasons not in SDM
+			if(ecx==35 || ecx==38 || ecx==42 || ecx==65 || ecx>68 || ecx<0){
+				printk(KERN_INFO "exit reason number = %u not defined by SDM",ecx);
+				eax=0;
+				ebx=0;
+				ecx=0;
+				edx=0xFFFFFFFF;
 			}
-		else{
-				printk(KERN_INFO "CPUID(0x4FFFFFFE), exit number=%u exits=%d\n",ecx,exit_counter[(int)ecx]);
-				eax=exit_counter[(int)ecx];
-				ebx=ecx=edx=0;
-			}
-	  }
+			else if( ecx==5 || ecx==6 || ecx==11 || ecx==17 ||  ecx==35 || ecx==38 || ecx==42 || ecx==66){
+					printk(KERN_INFO"exit reason number =%u not enabled in KVM",ecx);
+					eax=ebx=ecx=edx=0x00000000;
+				}
+			else{
+					printk(KERN_INFO "CPUID(0x4FFFFFFE), exit number=%u exits=%d\n",ecx,exit_counter[(int)ecx]);
+					eax=exit_counter[(int)ecx];
+					ebx=ecx=edx=0;
+				}
+	  	}
 
 3. Make the necessary changes in vmx.c as well (variable declarations)<br>
 4. Make changes for code block and write if..else condition for when eax = 0x4FFFFFFF. <br>
 	  
-  	else if(eax == 0x4FFFFFFF)
-		{
-		if(ecx==35 || ecx==38 || ecx==42 || ecx==65 || ecx>68 || ecx<0){
-                        printk(KERN_INFO "exit reason number = %u not defined by SDM",ecx);
-                        eax=0;
-                        ebx=0;
-                        ecx=0;
-                        edx=0xFFFFFFFF;
-                }
-                else if( ecx==5 || ecx==6 || ecx==11 || ecx==17 ||  ecx==35 || ecx==38 || ecx==42 || ecx==66){
-                                printk(KERN_INFO"exit reason number =%u not enabled in KVM",ecx);
-                                eax=ebx=ecx=edx=0;
+		else if(eax == 0x4FFFFFFF)
+			{
+			if(ecx==35 || ecx==38 || ecx==42 || ecx==65 || ecx>68 || ecx<0){
+				printk(KERN_INFO "exit reason number = %u not defined by SDM",ecx);
+				eax=0;
+				ebx=0;
+				ecx=0;
+				edx=0xFFFFFFFF;
+			}
+			else if( ecx==5 || ecx==6 || ecx==11 || ecx==17 ||  ecx==35 || ecx==38 || ecx==42 || ecx==66){
+					printk(KERN_INFO"exit reason number =%u not enabled in KVM",ecx);
+					eax=ebx=ecx=edx=0;
+			}
+			else{
+				printk(KERN_INFO "CPUID(0x4FFFFFFF), exits number=%u",ecx);
+				ebx = (atomic64_read(&time_taken) >>32);
+				printk(KERN_INFO "Higher 32-bits-EBX %u",ebx);
+				ecx = (atomic64_read (&time_taken));
+				printk(KERN_INFO "Lower 32-bits-ECX %u",ecx);
+				edx = 0;
+			}
 		}
-		else{
-			printk(KERN_INFO "CPUID(0x4FFFFFFF), exits number=%u",ecx);
-			ebx = (atomic64_read(&time_taken) >>32);
-			printk(KERN_INFO "Higher 32-bits-EBX %u",ebx);
-			ecx = (atomic64_read (&time_taken));
-			printk(KERN_INFO "Lower 32-bits-ECX %u",ecx);
-			edx = 0;
-		}
-	}
      
                                                                      
 5. Save the changes and run the below commands in order as mentioned.<br>
@@ -81,24 +81,22 @@ I edited the cpuid.c code block for eax=0x4FFFFFFF to return the time spent proc
 <h3>Answer to Questions:</h3>
 	  <h4>Question-3</h4>
 	  
-We noticed that the count increased at a stable rate. Below are the screenshots for exit reason=0. The exit count is currently *******. <br>
-	  
-		  
-We did another reboot to see the increase in count of exits. The exit count raised to 24070 which is exactly the double of what it was previously. <br>
-		  
+We noticed that the count is stagnate in our case. Below are the screenshots for exit reason=2. The exit count is currently 256. <br>
+
+<img src="https://user-images.githubusercontent.com/70660489/207225178-8da4200a-18d8-458a-8bb0-9044ace33758.png"><br>
 
 	  
-We did one more reboot to find tha rate of increase. The number of exits is now ******** . Which is three times of the first output. Which conculdes that the number of exits is increasing at a stable rate.<br>
+		  
+We did another reboot to see the change in count of exits. The exit count is still the same and it was constant. <br>
+		  
 
-
-For exit reason=0, the number of exits increase by approximately ** on each boot.<br>	  
                            
 <h4>Question-4</h4>
 	  
 The most frequent exits were noticed for exit reason =***.<br>
 	  
 
-There were many exit reasons with 0 exits (least frequent). The full dmesg output is in the test3.txt /CMPE-283-Assignment-3 folder.	  <br>
+There were many exit reasons with 0 exits (least frequent).<br>
 	
 
 <h4>Other Output Screenshots </h4>
