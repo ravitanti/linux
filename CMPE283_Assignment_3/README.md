@@ -15,9 +15,10 @@ I edited the cpuid.c code block for eax=0x4FFFFFFF to return the time spent proc
     
 2. Navigate to ~/linux/arch/x86/kvm/cpuid.c and edit the code block. Put another if..else condition for when eax = 0x4FFFFFFE. <br>
 	  
-	 else if(eax == 0x4FFFFFFE)
-        {
+	
 
+	else if(eax == 0x4FFFFFFE)
+        	{
 		//reasons not in SDM
 		if(ecx==35 || ecx==38 || ecx==42 || ecx==65 || ecx>68 || ecx<0){
 			printk(KERN_INFO "exit reason number = %u not defined by SDM",ecx);
@@ -40,9 +41,8 @@ I edited the cpuid.c code block for eax=0x4FFFFFFF to return the time spent proc
 3. Make the necessary changes in vmx.c as well (variable declarations)<br>
 4. Make changes for code block and write if..else condition for when eax = 0x4FFFFFFF. <br>
 	  
-  else if(eax == 0x4FFFFFFF)
-	{
-
+  	else if(eax == 0x4FFFFFFF)
+		{
 		if(ecx==35 || ecx==38 || ecx==42 || ecx==65 || ecx>68 || ecx<0){
                         printk(KERN_INFO "exit reason number = %u not defined by SDM",ecx);
                         eax=0;
@@ -54,7 +54,6 @@ I edited the cpuid.c code block for eax=0x4FFFFFFF to return the time spent proc
                                 printk(KERN_INFO"exit reason number =%u not enabled in KVM",ecx);
                                 eax=ebx=ecx=edx=0;
 		}
-
 		else{
 			printk(KERN_INFO "CPUID(0x4FFFFFFF), exits number=%u",ecx);
 			ebx = (atomic64_read(&time_taken) >>32);
