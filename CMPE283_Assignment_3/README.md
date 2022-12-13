@@ -4,9 +4,10 @@
 <h2>Assignment-03</h2>
 
 <h3>Work done by Ravi (015267200):</h3>
+I edited the cpuid.c code block for eax=0x4FFFFFFE to return the number of exits for a specific exit reason and return the value in eax register. I then ran the make command again to verify output through cpuid command in neested VM and dmesg command in the host VM.
 
 <h3>Work done by Saurabh (015267226):</h3>
-
+I edited the cpuid.c code block for eax=0x4FFFFFFF to return the time spent processing the exit number provided in ecx and return the high 32 bits in %ebx and low 32-bit in %ecx. I then commited this code change to the GitHub folder CMPE-283-Assignment-3
 
 <h3>Steps followed:</h3>
     
