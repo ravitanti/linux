@@ -81,19 +81,16 @@ I edited the cpuid.c code block for eax=0x4FFFFFFF to return the time spent proc
 <h3>Answer to Questions:</h3>
 	  <h4>Question-3</h4>
 	  
-We noticed that the count is stagnate in our case. Below are the screenshots for exit reason=2. The exit count is currently 256. <br>
+We noticed that the count increased in our case. Below are the screenshots for all exit reason. The highest exit count is currently 1024 for exit number 7. <br>
+<img src="https://user-images.githubusercontent.com/70660489/207248188-4f2a64e7-ed3e-405b-ab9b-6179c57bc247.png"><br>
 
-<img src="https://user-images.githubusercontent.com/70660489/207225178-8da4200a-18d8-458a-8bb0-9044ace33758.png"><br>
-
-	  
 		  
-We did another reboot to see the change in count of exits. The exit count is still the same and it was constant. <br>
+We did another reboot to see the change in count of exits. The exit count increased as well.<br>
 		  
-
                            
 <h4>Question-4</h4>
 	  
-The most frequent exits were noticed for exit reason =***.<br>
+The most frequent exits were noticed for exit reason =7.<br>
 	  
 
 There were many exit reasons with 0 exits (least frequent).<br>
