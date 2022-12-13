@@ -90,18 +90,25 @@ We did another reboot to see the change in count of exits. The exit count increa
                            
 <h4>Question-4</h4>
 	  
-The most frequent exits were noticed for exit reason =7.<br>
+The most frequent exits were noticed for exit reason = 9.<br>
+CPUID(0x4FFFFFFF), exit number=9<br>
+Lower 32 bit value ebx=2688 <br>
+Higher 32 bit value ecx=0<br>
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =11544872091648<br>
 	  
-
-There were many exit reasons with 0 exits (least frequent).<br>
-	
+The least frequent one was exit reason = 2<br>
+CPUID(0x4FFFFFFF), exit number=2<br>
+Lower 32 bit value ebx=576 <br>
+Higher 32 bit value ecx=0<br>
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =2473901162496<br>
 
 <h4>Other Output Screenshots </h4>
 
 <li> Output of cpuid command for ebx(high 32-bit) and ecx(low 32-bit) values when eax=0x4FFFFFFF. <br>
-  
+  <img alt="TestF" src="https://user-images.githubusercontent.com/70660489/207249796-ca508f22-9608-4dd4-b94f-1976d0387f7d.png">
 
 
-<li> dmesg output of test4 script for ebx(high 32-bit) and ecx(low 32-bit) values when eax=0x4FFFFFFF. Full dmesg logs is in the test4.txt file in CMPE-283-Assignment-3 folder.<br>
+
+<li>  Full logs is in the testE.txt and testF.txt file in CMPE-283-Assignment-3 folder.<br>
   
 
