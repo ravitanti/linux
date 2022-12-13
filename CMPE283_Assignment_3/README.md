@@ -15,11 +15,11 @@ I edited the cpuid.c code block for eax=0x4FFFFFFF to return the time spent proc
     
 2. Navigate to ~/linux/arch/x86/kvm/cpuid.c and edit the code block. Put another if..else condition for when eax = 0x4FFFFFFE. <br>
 	  
-	  else if(eax == 0x4FFFFFFE)
+	 else if(eax == 0x4FFFFFFE)
         {
 
 		//reasons not in SDM
-		if(ecx==35 || ecx==38 || ecx==42 || ecx<0){
+		if(ecx==35 || ecx==38 || ecx==42 || ecx==65 || ecx>68 || ecx<0){
 			printk(KERN_INFO "exit reason number = %u not defined by SDM",ecx);
 			eax=0;
 			ebx=0;
@@ -27,42 +27,43 @@ I edited the cpuid.c code block for eax=0x4FFFFFFF to return the time spent proc
 			edx=0xFFFFFFFF;
 		}
 		else if( ecx==5 || ecx==6 || ecx==11 || ecx==17 ||  ecx==35 || ecx==38 || ecx==42 || ecx==66){
-				printk(KERN_INFO"CPUID(0x4FFFFFFE), exit reason number =%u not enabled in KVM",ecx);
-				eax=ebx=ecx=edx=0;
+				printk(KERN_INFO"exit reason number =%u not enabled in KVM",ecx);
+				eax=ebx=ecx=edx=0x00000000;
 			}
 		else{
-				printk(KERN_INFO "CPUID(0x4FFFFFFE), exit number=%u exits=%d\n",ecx,arch_atomic_read(&exit_Reason[ecx]));
-				eax=atomic_read(&exit_Reason[(int)ecx]);
+				printk(KERN_INFO "CPUID(0x4FFFFFFE), exit number=%u exits=%d\n",ecx,exit_counter[(int)ecx]);
+				eax=exit_counter[(int)ecx];
 				ebx=ecx=edx=0;
 			}
-		}
+	  }
 
 3. Make the necessary changes in vmx.c as well (variable declarations)<br>
 4. Make changes for code block and write if..else condition for when eax = 0x4FFFFFFF. <br>
 	  
   else if(eax == 0x4FFFFFFF)
 	{
-		if(ecx==35 || ecx==38 || ecx==42 || ecx<0){
-          printk(KERN_INFO "CPUID(0x4FFFFFFF), exit reason number = %u not defined by SDM",ecx);
-          eax=0;
-          ebx=0;
-          ecx=0;
-          edx=0xFFFFFFFF;
-     }
-     else if( ecx==5 || ecx==6 || ecx==11 || ecx==17 ||  ecx==35 || ecx==38 || ecx==42 || ecx==66){
-          printk(KERN_INFO"exit reason number =%u not enabled in KVM",ecx);
-          eax=ebx=ecx=edx=0;
+
+		if(ecx==35 || ecx==38 || ecx==42 || ecx==65 || ecx>68 || ecx<0){
+                        printk(KERN_INFO "exit reason number = %u not defined by SDM",ecx);
+                        eax=0;
+                        ebx=0;
+                        ecx=0;
+                        edx=0xFFFFFFFF;
+                }
+                else if( ecx==5 || ecx==6 || ecx==11 || ecx==17 ||  ecx==35 || ecx==38 || ecx==42 || ecx==66){
+                                printk(KERN_INFO"exit reason number =%u not enabled in KVM",ecx);
+                                eax=ebx=ecx=edx=0;
 		}
 
 		else{
-          printk(KERN_INFO "CPUID(0x4FFFFFFF), exits number=%u",ecx);
-          ebx = (atomic64_read(&time_taken) >>32);
-          printk(KERN_INFO "Higher 32-bits-EBX %u",ebx);
-          ecx = (atomic64_read (&time_taken));
-          printk(KERN_INFO "Lower 32-bits-ECX %u",ecx);
-          edx = 0;
+			printk(KERN_INFO "CPUID(0x4FFFFFFF), exits number=%u",ecx);
+			ebx = (atomic64_read(&time_taken) >>32);
+			printk(KERN_INFO "Higher 32-bits-EBX %u",ebx);
+			ecx = (atomic64_read (&time_taken));
+			printk(KERN_INFO "Lower 32-bits-ECX %u",ecx);
+			edx = 0;
 		}
-	}	
+	}
      
                                                                      
 5. Save the changes and run the below commands in order as mentioned.<br>
