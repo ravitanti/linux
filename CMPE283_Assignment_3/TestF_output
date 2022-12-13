@@ -1,0 +1,346 @@
+saurabh_nested@debianps:~/Desktop$ gcc testF.c
+saurabh_nested@debianps:~/Desktop$ ./a.out
+CPUID(0x4FFFFFFF), exit number=0
+Lower 32 bit value ebx=2696 
+Higher 32 bit value ecx=2696
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =11579231832712
+
+CPUID(0x4FFFFFFF), exit number=1
+Lower 32 bit value ebx=2440 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =10479720202240
+
+CPUID(0x4FFFFFFF), exit number=2
+Lower 32 bit value ebx=576 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =2473901162496
+
+CPUID(0x4FFFFFFF), exit number=3
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=4
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=5
+Lower 32 bit value ebx=1088 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =4672924418048
+
+CPUID(0x4FFFFFFF), exit number=6
+Lower 32 bit value ebx=1152 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =4947802324992
+
+CPUID(0x4FFFFFFF), exit number=7
+Lower 32 bit value ebx=1664 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =7146825580544
+
+CPUID(0x4FFFFFFF), exit number=8
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=9
+Lower 32 bit value ebx=2688 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =11544872091648
+
+CPUID(0x4FFFFFFF), exit number=10
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=11
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=12
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=13
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=14
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=15
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=16
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=17
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=18
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=19
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=20
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=21
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=22
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=23
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=24
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=25
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=26
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=27
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=28
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=29
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=30
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=31
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=32
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=33
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=34
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=35
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=36
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=37
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=38
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=39
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=40
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=41
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=42
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=43
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=44
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=45
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=46
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=47
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=48
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=49
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=50
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=51
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=52
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=53
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=54
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=55
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=56
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=57
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=58
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=59
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=60
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=61
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=62
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=63
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=64
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=65
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=66
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=67
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
+
+CPUID(0x4FFFFFFF), exit number=68
+Lower 32 bit value ebx=0 
+Higher 32 bit value ecx=0
+CPUID(0x4FFFFFFF), The number of cycles spent in exit =0
